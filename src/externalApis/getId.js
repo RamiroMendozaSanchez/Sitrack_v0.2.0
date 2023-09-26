@@ -6,6 +6,7 @@ require('dotenv').config();
 
 async function getId() {
     const baseURL = process.env.BASE_URL_WIALON;
+    console.log(baseURL);
     var listIds = [];
     var sid = await getSid();
     var grupos = '';

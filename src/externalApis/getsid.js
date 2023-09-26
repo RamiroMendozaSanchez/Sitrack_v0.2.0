@@ -5,6 +5,8 @@ require('dotenv').config();
 async function getSid() {
     const token = process.env.TOKEN_WIALON;
     const baseURL = process.env.BASE_URL_WIALON;
+    console.log(token);
+    console.log(baseURL);
     try {
         const response = await axios.get(
             `${baseURL}?svc=token/login&params={ "token":"${token}"}`

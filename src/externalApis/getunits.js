@@ -7,6 +7,7 @@ const getIdsBD = require('../services/getIdsBD');
 async function getUnits() {
     var listUnits = [];
     const baseURL = process.env.BASE_URL_WIALON;
+    console.log(baseURL);
     var sid = await getsid();
     var obj = await getIdsBD();
     for (const idsArray of obj) {
