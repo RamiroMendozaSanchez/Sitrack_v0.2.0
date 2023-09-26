@@ -1,5 +1,6 @@
 const axios = require("axios");
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({path:'../../.env'});
 
 async function getSid() {
     const token = process.env.TOKEN_WIALON;
