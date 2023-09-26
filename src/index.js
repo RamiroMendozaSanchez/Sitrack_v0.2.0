@@ -21,6 +21,6 @@ async function app() {
         console.error(error);
     }
 }
-setInterval(app, 60000);
+setInterval(app, 10000);
 
 api.listen(port, () => console.log('server listening on port', port));

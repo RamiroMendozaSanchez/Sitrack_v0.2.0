@@ -2,7 +2,7 @@ const getSid = require("./getsid");
 const readGroups = require("../services/readGroups");
 const axios = require("axios");
 const path = require('path');
-require('dotenv').config({path:'../../.env'});
+require('dotenv').config();
 
 async function getId() {
     const baseURL = process.env.BASE_URL_WIALON;
