@@ -1,6 +1,6 @@
 const axios = require("axios");
 const path = require('path');
-require('dotenv').config({path:'../.env'});
+require('dotenv').config();
 const getsid = require('./getsid')
 const getIdsBD = require('../services/getIdsBD');
 
@@ -65,6 +65,7 @@ async function getUnits() {
             }
         }
     }
+    console.log(listUnits);
     return listUnits;
 }
 

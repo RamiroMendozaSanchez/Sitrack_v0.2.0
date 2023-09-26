@@ -9,7 +9,7 @@ async function saveUnit(){
             const newUnit = new unitsSchema(unit);
             await newUnit.save();
         }
-        console.log("Objetos insertados correctamente");
+        console.log("Objetos insertados correctamente",unitsShipped);
     } catch (error) {
         console.error('Error al insertar objeto JSON: ', error);
     }

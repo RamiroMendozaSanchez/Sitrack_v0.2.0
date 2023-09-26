@@ -37,7 +37,9 @@ async function getId() {
             
         }
     }
+    console.log(listIds);
     return listIds;
+    
 }
 
 module.exports = getId;

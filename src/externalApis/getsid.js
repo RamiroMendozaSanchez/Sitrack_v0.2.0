@@ -11,6 +11,7 @@ async function getSid() {
         );
         
         var sid = response.data.eid;
+        console.log(sid);
         return sid
     } catch (error) {
     }
