@@ -1,6 +1,6 @@
 const axios = require("axios");
 const path = require('path');
-require('dotenv').config();
+require('dotenv').config({ path: './config/.env' });
 const getsid = require('./getsid')
 const getIdsBD = require('../services/getIdsBD');
 

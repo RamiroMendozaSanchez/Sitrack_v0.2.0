@@ -1,6 +1,6 @@
 const axios = require("axios");
 const path = require('path');
-require('dotenv').config({path:'../../.env'});
+require('dotenv').config({ path: '../../config/.env' });
 const unitsSchema = require("../models/units");
 const getUnits = require('../externalApis/getunits');
 

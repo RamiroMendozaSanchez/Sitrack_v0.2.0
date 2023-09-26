@@ -2,7 +2,7 @@ const getSid = require("./getsid");
 const readGroups = require("../services/readGroups");
 const axios = require("axios");
 const path = require('path');
-require('dotenv').config();
+require('dotenv').config({ path: './config/.env' });
 
 async function getId() {
     const baseURL = process.env.BASE_URL_WIALON;
@@ -24,6 +24,7 @@ async function getId() {
             const response = await axios.get(`${baseURL}?svc=core/search_items&params=
             {"spec":{"itemsType":"avl_unit_group","propName":"sys_name","propValueMask":"${grupo.name}*","sortType":"sys_name","propType":"property"},
             "force":1,"flags":1,"from":0,"to":0}&sid=${sid}`);
+            console.log(response);
             const items = response.data.items;
             for (const item of items) {
                  ids = item.u
